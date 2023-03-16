@@ -57,6 +57,7 @@ public class ComputerAdapters extends ArrayAdapter<Computer> {
             @Override
             public void onClick(View v) {
                 MainActivity.copyItem(computer);
+                Toast.makeText(context , "Shallow Copy", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -72,6 +73,7 @@ public class ComputerAdapters extends ArrayAdapter<Computer> {
             @Override
             public void onClick(View v) {
                 MainActivity.copyItemDeep(computer);
+                Toast.makeText(context, "Deep Copy", Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#146C94"
+        android:gravity="center"
+        android:text="Quản lý máy tính công ty"
+        android:textColor="#F6F1F1"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Phòng ban"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/os"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Hệ điều hành"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/office"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Office"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/browser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Trình duyệt"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/antivirus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Phần mềm diệt virus"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Phần mềm khác"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#0E8388"
+            android:text="Thêm"
+            android:textColor="#CBE4DE"
+            android:paddingHorizontal="2dp"
+            android:layout_marginRight="4dp"
+            />
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#D5572F"
+            android:text="Sửa"
+            android:textColor="#CBE4DE"
+            android:paddingHorizontal="2dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvComputer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+</LinearLayout>
